@@ -1,6 +1,15 @@
 (defpackage bld-e2
   (:use :cl :bld-ga :bld-gagen)
+  (:shadowing-import-from :bld-gen
+			  + - * / expt
+			  sin cos tan
+			  atan asin acos
+			  sinh cosh tanh 
+			  asinh acosh atanh
+			  log exp sqrt abs
+			  min max signum)
   (:export :e2 :se2 :ve2 :ie2 :re2 :mve2))
+
 
 (in-package :bld-e2)
 
