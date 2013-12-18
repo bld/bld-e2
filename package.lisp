@@ -1,25 +1,29 @@
-(defpackage bld-e2
-  (:use :cl :bld-ga :bld-gagen)
-  (:shadowing-import-from :bld-gen
-			  + - * / expt
-			  sin cos tan
-			  atan asin acos
-			  sinh cosh tanh 
-			  asinh acosh atanh
-			  log exp sqrt abs
-			  min max signum)
-  (:export :e2 :se2 :ve2 :ie2 :re2 :mve2))
 
-
-(in-package :bld-e2)
-
-(defparameter *spec*
-  '((se2 #(0))
-    (ve2 #(#b1 #b10))
-    (ie2 #(#b11))
-    (re2 #(0 #b11))
-    (mve2 #(0 1 2 3)))
-  "2D Euclidean algebra specification")
-
-(defg e2 2)
-(defgfun e2 2)
+(DEFPACKAGE BLD-E2
+  (:USE :CL :BLD-GA)
+  (:SHADOWING-IMPORT-FROM :BLD-GEN
+                          +
+                          -
+                          *
+                          /
+                          EXPT
+                          SIN
+                          COS
+                          TAN
+                          ATAN
+                          ASIN
+                          ACOS
+                          SINH
+                          COSH
+                          TANH
+                          ASINH
+                          ACOSH
+                          ATANH
+                          LOG
+                          EXP
+                          SQRT
+                          ABS
+                          MIN
+                          MAX
+                          SIGNUM)
+  (:EXPORT :E2 :E2 :SE2 :VE2 :BVE2 :RE2)) 
